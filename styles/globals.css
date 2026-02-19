@@ -18,7 +18,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+figure {
   margin: 0;
 }
 
@@ -39,4 +40,9 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+button:focus,
+a:focus {
+  outline: none;
 }

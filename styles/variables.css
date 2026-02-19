@@ -2,3 +2,62 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  /* шрифты */
+  --main-font: "IBM Plex mono";
+  --site-name-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --text-size: 18px;
+  --text-line-height: 130%;
+  --main-title-line-height: 82.5%;
+  /* размеры */
+  --min-block-size: 668px;
+  --header-grid-rows: 1fr auto 1fr;
+  --content-padding: 40px 0;
+  --header-padding: 10px;
+  --decorated-zone-gap: 10px;
+  --section-padding: 0 10px;
+  --main-section-mb: 50px;
+  --decorated-zone-size: 25px;
+  --margin-big: 20px;
+  --margin-small: 10px;
+  --paragraph-mb: 10px;
+  --gap-big: 20px;
+  --gap-small: 10px;
+  /* цвета */
+  --bg-color: #000028;
+  --main-title-color: #db00ff;
+  --main-title-shadow-color: #ff0070;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --border-coner-color: #ff0070;
+  --title-decor-bg: #ff0070;
+  --section-title: #ff0070;
+  --link-shadow-color: #ff0070;
+  --menu-color: rgb(255 0 112);
+  --hover-border-menu-color: rgb(255 0 112 / 40%);
+  --title-decor-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+@media (width >= 768px) {
+  :root {
+    /* шрифты */
+    --site-name-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    /* размеры */
+    --min-block-size: 1024px;
+    --header-padding: 20px;
+    --content-padding: 60px 0;
+    --decorated-zone-gap: 20px;
+    --section-padding: 0 20px;
+    --main-section-mb: 80px;
+    --text-size: 18px;
+    --text-line-height: 130%;
+    --main-title-line-height: 82.5%;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --min-block-size: 768px;
+  }
+}

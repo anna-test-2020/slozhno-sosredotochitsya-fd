@@ -221,7 +221,7 @@ h4 {
   margin-block-end: var(--main-section-mb);
 }
 
-.main__section li:not(:last-of-type) {
+.section__list_margin-end li:not(:last-of-type) {
   margin-block-end: var(--margin-big);
 }
 
@@ -297,6 +297,11 @@ h4 {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+figure {
+    height: 100%;
+    width: 100%;
 }
 
 @media (width >= 768px) {
